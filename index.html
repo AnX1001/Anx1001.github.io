@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- MapBox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <!--  -->
+
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Earth</title>
+    <link rel="stylesheet" href="styling/styling.css">
+    <link rel="stylesheet" href="styling/map.css">
+</head>
+<body>
+
+   
+
+    <!-- audio files -->
+<audio id="clicksound" src="./media/clicksoundthree.mp3" type="audio/mpeg"></audio>
+<audio id="clicksoundTwo" src="./media/clicksoundfive.mp3" type="audio/mpeg"></audio>
+<audio id="clicksoundThree" src="./media/computerbeep_31.mp3"></audio>
+<audio id="scanSound" src="./media/scanning.mp3"></audio>
+<audio id="beamUpSound" src="./media/beamup.mp3"></audio>
+
+    <!--  -->
+    <div class="superFrame">
+    
+        
+        <div class="sidepanelA">
+            <div class="pseudo"></div>
+            <div id="culture" class="buttonA">Culture</div>
+            <div id="langBtn" class="buttonA">Languages</div>
+            <div id="techBtn" class="buttonA">Technology</div>
+            <div id="gmBtn" class="buttonA">GAME MODE</div>
+            <div class="pseudoTwo"></div>
+            
+        </div>
+
+        <div class="innerScreen">
+                   <h1 id="congrats">Mission Complete</h1>
+           
+            <div class="gameScreen">
+                <div class="shuttle"></div>
+                <div id="gameMap" class="mapSection">
+                    <div class="animation">
+                        <div class="lineB"></div>
+                        <div class="lineA"></div>    
+                    </div>
+                </div>
+            </div>
+            <div class="contentScreen">
+                <figure class="figure">
+                    <img class="imgCS" src="https://cdn.pixabay.com/photo/2016/08/24/14/29/earth-1617121__340.jpg" alt="planet">
+                    <figcaption id="figcaption">Earth is the third planet from the Sun</figcaption>
+                </figure>
+                <div class="textblock">
+                    <h1 class="header">Planet Earth</h1>
+                     <figure class="intxtFigure">
+                        <img class="smlimgCs" src="https://cdn.pixabay.com/photo/2011/12/14/12/23/solar-system-11111__340.jpg" alt="planet earth">
+                        <figcaption id="figcaptionTwo">About 29% of the surface is land consisting of continens and islands</figcaption>
+            
+                    </figure>
+                    <p class="paraOne">Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29% of the surface is land consisting of continents and islands. The remaining 71% is covered with water, mostly by oceans but also lakes, rivers and other fresh water, which together constitute the hydrosphere.
+                    <p class="paraTwo">The outer layer is divided into several rigid tectonic plates that migrate across the surface over many millions of years. While the interior remains active with a solid iron inner core, a liquid outer core that generates its magnetic field, and a convecting mantle that drives plate tectonics. </p>
+
+                    </p>
+                </div>
+                <div id="map" class="mapSection">
+                    <h1>this is map section</h1>
+                </div>
+           
+            </div>
+            
+            
+             
+    
+        </div>
+
+
+        <div class="sidepanelB">
+            <div class="pseudo"></div>
+            <div id="startBtn" class="buttonB">Start</div>
+            <div id="scanBtn" class="buttonB">Scan</div>
+            <div id="plnBtn" class="buttonB">Planet Status</div>
+            <div id="shuttleBtn" class="buttonB">Send ShuttleCraft</div>
+            <div class="pseudoTwo"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="script/script.js"></script>
+<script src="./script/game.js"></script>
+<script src="./script/mapbox.js"></script>
+
+</html>

@@ -1,0 +1,340 @@
+* {
+    background-color: black;
+}
+
+body {
+    /* border: 8px solid gold; */
+    height: 900px;
+    width: 1780px;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 50px;
+    font-family: sans-serif;
+
+
+}
+
+.superFrame {
+    display: grid; 
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    /* border: 5px solid pink; */
+    height: 900px;
+    align-items: center;
+    border-radius: 50px;
+    /* background-color: #cc6699; */
+    background: linear-gradient(180deg, #999fff 50%, #cc6699 50%);
+    
+ 
+
+
+}
+.innerScreen {
+    height: 90%; 
+    width: auto;
+    border-radius: 50px;
+    background-color: black;
+    /* background-image: url('https://cdn.pixabay.com/photo/2016/10/20/18/35/sunrise-1756274_960_720.jpg'); */
+    background-size: cover;
+    /* border: 1px solid red; */
+    color: pink;
+
+
+}
+
+.sidepanelA {
+    font-size: 20px;
+    height: fit-content;
+    width: 200px;
+    background-color: black;
+    margin: 10px auto;
+    
+
+   
+}
+
+.pseudo {
+    background-color: #999fff;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+}
+
+.pseudoTwo {
+    background-color: #cc6699;
+    border-radius: 8px 8px 0 0;
+    height: 6px;
+}
+
+.sidepanelB {
+    font-size: 20px;
+    height: fit-content;
+    width: 200px;
+    margin-left: auto;
+    background-color: black;
+    margin: 10px auto;
+
+}
+
+
+.buttonA {
+    
+    background-color: #999fff;
+    height: 80px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.buttonB {
+    
+    background-color: #cc6699;
+    height: 80px;
+    width: 100%;
+    margin: 8px auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.buttonA:hover, .buttonB:hover {
+    background-color: #FF9933;
+}
+
+/* animation */
+
+.lineA {
+    width: 10px;
+    height: 93%;
+    background-color: #FF9933;
+    margin-top: 30px;
+    margin-left: auto;
+    animation: 2s scan 2 linear; 
+    opacity: 0;
+    border-radius: 8px;
+    z-index: 10;
+   
+
+}
+
+.lineB {
+    width: 10px;
+    height: 93%;
+    background-color: #FF9933;
+    margin-top: 30px;
+    animation: 2s scanTwo 2 linear; 
+    opacity: 0;
+    border-radius: 8px;
+    z-index: 10;
+    
+
+}
+
+
+.animation {
+    height: 100%;
+    width: 99%;
+    background-color: transparent;
+    display: none;
+    border: 5px solid red;
+    position: absolute;
+ 
+
+} 
+
+.darkblock {
+    height: 44px;
+    width: 5px;
+    background-color: black;
+    margin-left: 300px;
+    margin-top: -45px;
+}
+
+.darkblockTwo {
+    height: 44px;
+    width: 5px;
+    background-color: black;
+    margin-top: 83px;
+    margin-left: 1100px;
+}
+
+
+
+
+@keyframes scan {  
+    100% {
+        transform: translateX(-650px);
+        opacity: 0;     
+    }
+
+    0% {
+        opacity: 9;
+    }
+   
+}
+
+@keyframes scanTwo {  
+    100% {
+        transform: translateX(650px);
+        opacity: 0;     
+    }
+
+    0% {
+        opacity: 9;
+    }
+    
+}
+
+/* change background picture and innerscreen content */
+
+/* Content screen */
+
+.contentScreen {
+    height: 94%;
+    /* border: 4px solid pink; */
+    margin: 20px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 450px auto;
+    padding: 5px;
+    
+   
+   
+}
+
+
+figure {
+    width: 350px;
+    height: 370px;
+    /* border: 1px solid green; */
+
+
+}
+
+
+#figcaption {
+    color: #FF9933;
+    font-size: 13px;
+     
+
+
+}
+
+#figcaptionTwo{
+    color: #FF9933;
+    margin: 2px;
+    font-size: 13px;
+    /* border: 1px solid red; */
+    text-align: left;
+
+}
+
+
+
+/* images will inherit width and height from <figure> */
+img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+/* Text styling for content screen */
+
+.textblock {
+    color: #FF9933;
+    /* border: 1px solid steelblue; */
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.intxtFigure {
+    /* border: 1px solid pink; */
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-top: -20px;
+}
+
+.mapSection {
+    height: 100%;
+    /* border: 1px solid darkblue; */
+    color: red;
+    display: block;
+    width: 100%;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 8px;
+}
+
+
+/* Game screen active */
+
+.gameScreenActive {
+    /* border: 1px solid orange; */
+    height: 94%;
+    margin: 20px;
+    
+
+}
+
+.shuttle {
+    width: 250px;
+    height: 130px;
+    position: absolute;
+    animation: 6s flyShuttle 1 forwards;
+    background: url(/media/shuttle.png) no-repeat 0 0;
+    background-size: contain;
+    z-index: 10;
+    display: none;
+   
+}
+ 
+
+
+
+@keyframes flyShuttle {
+
+    100% {
+        transform: translate(1060px, 100px);
+        opacity: 0;
+
+    }
+
+    92% {
+        transform: translate(1060px, 100px);
+        opacity: 1;
+    }
+    
+    90% {
+        transform: translate(700px, 130px);
+        opacity: 1
+    }
+    
+    
+    80% {
+        transform: translate(700px, 130px);
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+}
+
